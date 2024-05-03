@@ -7,13 +7,13 @@ import { EncButton } from "./components/buttons";
 export default async function Home() {
   const homeData = await getHomePageContent();
 
-  const navData = homeData.navigation;
-  const navButton = homeData.navigation.buttonsCollection.items[0];
-  const homeBG = homeData.backgroundImage?.url;
-  const banner = homeData.heroBackground?.url;
-  const locations = homeData.locationCardCollection.items;
-  const experiences = homeData.experienceCardsCollection.items;
-  const footerSection = homeData.footerSection;
+  const navData = homeData?.navigation;
+  const navButton = homeData?.navigation?.buttonsCollection?.items[0];
+  const homeBG = homeData?.backgroundImage?.url;
+  const banner = homeData?.heroBackground?.url;
+  const locations = homeData?.locationCardCollection.items;
+  const experiences = homeData?.experienceCardsCollection.items;
+  const footerSection = homeData?.footerSection;
   return (
     <div style={{ backgroundImage: `url(${homeBG})` }}>
       <header className="flex justify-between items-center w-full p-20 pt-6 pb-6 ">
