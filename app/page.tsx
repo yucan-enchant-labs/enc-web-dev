@@ -31,6 +31,7 @@ export default async function Home() {
             style={navButton.style}
             openIn={navButton.openIn}
           />
+
         </div>
       </header>
       <main className="flex min-h-screen flex-col items-center p-20 pt-0">
